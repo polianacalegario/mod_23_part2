@@ -1,0 +1,99 @@
+/* Estilos para o header */
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  &__title { /* Aplicação do BEM aqui */
+    margin: 0;
+  }
+}
+
+/* Estilos para a seção "Quem Somos" */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  &__image { /* Aplicação do BEM aqui */
+    max-width: 50%;
+    float: left;
+    margin-right: 20px;
+  }
+
+  &__text { /* Aplicação do BEM aqui */
+    max-width: 45%;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Estilos para a galeria de arte */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__item { /* Aplicação do BEM aqui */
+    width: calc(33.33% - #{math.div(20, 3)}px);
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.info-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+
+  &__title { /* Aplicação do BEM aqui */
+    margin-top: 0;
+  }
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+
+  &__title { /* Aplicação do BEM aqui */
+    margin-bottom: 20px;
+  }
+
+  &__form { /* Aplicação do BEM aqui */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__label { /* Aplicação do BEM aqui */
+      margin-bottom: 5px;
+    }
+
+    &__input { /* Aplicação do BEM aqui */
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__button { /* Aplicação do BEM aqui */
+      padding: 10px 20px;
+    }
+  }
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: math.sub(20px, 5px); /* Vai subtrair 5px do valor 20px */
+  text-align: center;
+}
